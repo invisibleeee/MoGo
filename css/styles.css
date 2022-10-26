@@ -25,7 +25,7 @@ nav, footer, header, aside {
 }
 
 html, body {
-  font-family: "Lato", sans-serif;
+  font-family: Montserrat;
   height: 100%;
   width: 100%;
   font-size: 100%;
@@ -75,3 +75,103 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.banner {
+  background: url(/img/banner.png) no-repeat center;
+  min-height: 100vh;
+  padding: 28px 0px 157px 0px;
+}
+.banner__title {
+  font-family: "Kaushan Script";
+  text-align: center;
+  font-size: 72px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0px 0px 42px 0px;
+}
+.banner__text {
+  text-align: center;
+  font-size: 150px;
+  line-height: 140px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0px 0px 71px 0px;
+}
+.banner__line {
+  text-align: center;
+  width: 60px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 0 auto 50px;
+}
+.banner__btn {
+  text-align: center;
+}
+.banner__btn button {
+  width: 160px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 3px solid #ffffff;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.header {
+  margin: 0px 0px 178px 0px;
+}
+.header__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.header__logo a {
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.header__logo a span {
+  text-transform: none;
+}
+.header__nav {
+  display: flex;
+}
+.header__link {
+  position: relative;
+  margin: 0px 55px 0px 0px;
+}
+.header__link:last-child {
+  margin: 0;
+}
+.header__link a {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.header__link a:hover {
+  color: #fce38a;
+}
+.header__link a:hover:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+  border: 2px solid #fce38a;
+}

@@ -1,2 +1,112 @@
 @import 'base';
 
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.banner {
+    background: url(/img/banner.png) no-repeat center;
+    //background-size: cover;
+    min-height: 100vh;
+    padding: 28px 0px 157px 0px;
+		&__body {}
+
+		&__title {
+            font-family: 'Kaushan Script';
+            text-align: center;
+            font-size: 72px;
+            line-height: 1.2;
+            font-weight: 400;
+            color: #ffffff;
+            margin: 0px 0px 42px 0px;
+        }
+
+		&__text {
+            text-align: center;
+            font-size: 150px;
+            line-height: 140px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #ffffff;
+            margin: 0px 0px 71px 0px;
+        }
+
+		&__line {
+            text-align: center;
+            width: 60px;
+            height: 3px;
+            background-color: #ffffff;
+            margin: 0 auto 50px;
+        }
+
+		&__btn {
+            text-align: center;
+            button {
+                width: 160px;
+                height: 40px;
+                background-color: rgba(0,0,0,0.0);
+                border: 3px solid #ffffff;
+                line-height: 1.2;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #ffffff;
+            }
+        }
+}
+
+.header {
+    margin: 0px 0px 178px 0px;
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &__logo a {
+        font-size: 30px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ffffff;
+        span {
+            text-transform: none;
+        }
+    }
+
+    &__nav {
+        display: flex;
+    }
+
+    &__link {
+        position: relative;
+        margin: 0px 55px 0px 0px;
+        &:last-child {
+            margin: 0;
+        }
+        
+        a {
+            font-size: 14px;
+            line-height: 1.2;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #ffffff;
+            &:hover {
+                color: #fce38a;
+                &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                bottom: -10px;
+                width: 100%;
+                border: 2px solid #fce38a;
+                }
+            }
+        }
+    }
+}
