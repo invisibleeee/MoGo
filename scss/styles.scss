@@ -12,7 +12,7 @@
 
 .banner {
     background: url(/img/banner.png) no-repeat center;
-    //background-size: cover;
+    background-size: cover;
     min-height: 100vh;
     padding: 28px 0px 157px 0px;
 		&__body {}
@@ -28,13 +28,14 @@
         }
 
 		&__text {
+            width: 70%;
             text-align: center;
             font-size: 150px;
             line-height: 140px;
             font-weight: 700;
             text-transform: uppercase;
             color: #ffffff;
-            margin: 0px 0px 71px 0px;
+            margin: 0px auto 71px;
         }
 
 		&__line {
