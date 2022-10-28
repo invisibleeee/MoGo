@@ -85,6 +85,40 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
+.title {
+  font-family: "Kaushan Script";
+  font-size: 24px;
+  line-height: 1.2;
+  color: #333333;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: Montserrat;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333333;
+  text-align: center;
+}
+
+.line {
+  width: 60px;
+  height: 3px;
+  background-color: #f38181;
+  margin: 0 auto;
+}
+
+.text {
+  font-family: Roboto;
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+  text-align: center;
+  width: 80%;
+}
+
 .banner {
   background: url(/img/banner.png) no-repeat center;
   background-size: cover;
@@ -176,4 +210,61 @@ h1, h2, h3, h4, h5, h6 {
   bottom: -10px;
   width: 100%;
   border: 2px solid #fce38a;
+}
+
+.about-us {
+  padding: 91px 0px 110px 0px;
+}
+.about-us__title {
+  margin: 0px 0px 23px 0px;
+}
+.about-us__subtitle {
+  margin: 0px 0px 40px 0px;
+}
+.about-us__line {
+  margin: 0px auto 47px;
+}
+.about-us__text {
+  margin: 0px auto 101px;
+}
+.about-us__images {
+  display: flex;
+  justify-content: space-between;
+}
+.about-us__img-1 {
+  background-color: #95e1d3;
+}
+.about-us__img-1 img {
+  margin: -10px 10px 0px -10px;
+}
+
+.facts {
+  background-color: #95e1d3;
+}
+.facts__row {
+  display: flex;
+  justify-content: space-between;
+}
+.facts__item {
+  flex: 0 0 19.91%;
+  text-align: center;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 79px 0px 90px 0px;
+}
+.facts__item:last-child {
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+.facts__amount {
+  font-size: 72px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0px 0px 15px 0px;
+}
+.facts__name {
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #ffffff;
 }
