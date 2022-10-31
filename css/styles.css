@@ -268,3 +268,48 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   color: #ffffff;
 }
+
+.service {
+  padding: 109px 0px 122px 0px;
+}
+.service__title {
+  margin: 0px 0px 22px 0px;
+}
+.service__subtitle {
+  margin: 0px 0px 42px 0px;
+}
+.service__line {
+  margin: 0px auto 66px;
+}
+.service__row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.column {
+  flex: 1 1 33.333%;
+  margin: 0px 0px 101px 0px;
+  padding: 0px 0px 0px 30px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.column__row {
+  display: flex;
+}
+.column__icon {
+  margin: 0px 29px 0px 0px;
+}
+.column__title {
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #333333;
+  margin: 0px 0px 20px 0px;
+}
+.column__text {
+  font-family: Roboto;
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+  margin: 0px 0px 51px 0px;
+}

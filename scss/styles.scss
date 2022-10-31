@@ -212,4 +212,58 @@
     }
 }
 
+.service {
+    padding: 109px 0px 122px 0px;
+    &__title {
+        margin: 0px 0px 22px 0px;
+    }
+
+    &__subtitle {
+        margin: 0px 0px 42px 0px;
+    }
+
+    &__line {
+        margin: 0px auto 66px;
+    }
+
+    &__row {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+}
+
+.column {
+    flex: 1 1 33.333%;
+    margin: 0px 0px 101px 0px;
+    padding: 0px 0px 0px 30px;
+    border-bottom: 1px solid #e5e5e5;
+    &__row {
+        display: flex;
+    }
+
+    &__icon {
+        margin: 0px 29px 0px 0px;
+    }
+
+    &__body {}
+
+    &__title {
+        line-height: 1.2;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #333333;
+        margin: 0px 0px 20px 0px;
+    }
+
+    &__text {
+        font-family: Roboto;
+        font-size: 15px;
+        line-height: 24px;
+        color: #999999;
+        margin: 0px 0px 51px 0px;
+    }
+}
+
+
 
