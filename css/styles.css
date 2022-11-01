@@ -289,9 +289,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .column {
   flex: 1 1 33.333%;
-  margin: 0px 0px 101px 0px;
-  padding: 0px 0px 0px 30px;
+  padding: 47px 30px 0px 30px;
+}
+.column:nth-child(-n+3) {
   border-bottom: 1px solid #e5e5e5;
+  padding: 0px 30px 51px 30px;
 }
 .column__row {
   display: flex;
@@ -302,14 +304,42 @@ h1, h2, h3, h4, h5, h6 {
 .column__title {
   line-height: 1.2;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
   color: #333333;
-  margin: 0px 0px 20px 0px;
+  margin: 0px 0px 15px 0px;
 }
 .column__text {
   font-family: Roboto;
   font-size: 15px;
   line-height: 24px;
   color: #999999;
-  margin: 0px 0px 51px 0px;
+}
+
+.feauture {
+  background: url(/img/feauture.png) no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 95px 0px 0px 0px;
+  overflow: hidden;
+  position: relative;
+}
+.feauture:after {
+  content: "";
+  position: absolute;
+  background: url(../img/feauture__img_2.png) 0 0/100% no-repeat;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.feauture__title {
+  margin: 0px 0px 22px 0px;
+}
+.feauture__subtitle {
+  margin: 0px 0px 38px 0px;
+}
+.feauture__line {
+  margin: 0px auto 45px;
+}
+.feauture__img {
+  text-align: center;
 }
