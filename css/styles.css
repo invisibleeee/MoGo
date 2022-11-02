@@ -233,6 +233,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 .about-us__img-1 {
   background-color: #95e1d3;
+  position: relative;
+}
+.about-us__img-1:before {
+  content: "";
+  position: absolute;
+  background: url(../img/about_us__logo.png) 0 0/100% no-repeat;
+  width: 8.42%;
+  padding-top: 9.2%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -100%);
+}
+.about-us__img-1::after {
+  content: "super team";
+  position: absolute;
+  bottom: 43%;
+  left: 34%;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 .about-us__img-1 img {
   margin: -10px 10px 0px -10px;
@@ -318,18 +340,9 @@ h1, h2, h3, h4, h5, h6 {
 .feauture {
   background: url(/img/feauture.png) no-repeat center;
   background-size: cover;
-  min-height: 100vh;
+  max-height: 850px;
   padding: 95px 0px 0px 0px;
-  overflow: hidden;
-  position: relative;
-}
-.feauture:after {
-  content: "";
-  position: absolute;
-  background: url(../img/feauture__img_2.png) 0 0/100% no-repeat;
-  top: 0;
-  left: 0;
-  z-index: 1;
+  margin: 0px 0px 90px 0px;
 }
 .feauture__title {
   margin: 0px 0px 22px 0px;
@@ -341,5 +354,34 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0px auto 45px;
 }
 .feauture__img {
-  text-align: center;
+  position: relative;
+}
+.feauture__img img {
+  display: block;
+  margin: 0 auto;
+}
+.feauture__img:after {
+  content: "";
+  position: absolute;
+  background: url(../img/feauture__img_2.png) 0 0/100% no-repeat;
+  width: 22.83%;
+  padding-top: 39.66%;
+  right: 16.66%;
+  bottom: 5.333%;
+}
+
+.service-2 {
+  padding: 21px 0px 0px 0px;
+}
+.service-2__title {
+  margin: 0px 0px 23px 0px;
+}
+.service-2__subtitle {
+  margin: 0px 0px 42px 0px;
+}
+.service-2__line {
+  margin: 0px auto 46px;
+}
+.service-2__text {
+  margin: 0px auto 0px;
 }

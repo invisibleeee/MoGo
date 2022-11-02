@@ -171,6 +171,28 @@
     &__img-1 {
         // position: relative;
         background-color: #95e1d3;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            background: url(../img/about_us__logo.png) 0 0 / 100% no-repeat;
+            width: 8.42%;
+            padding-top: 9.2%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -100%);
+        }
+        &::after {
+            content: "super team";
+            position: absolute;
+            bottom: 43%;
+            left: 34%;
+            font-size: 18px;
+            line-height: 1.2;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
         img {
             margin: -10px 10px 0px -10px;
         }
@@ -269,19 +291,10 @@
 .feauture {
     background: url(/img/feauture.png) no-repeat center;
     background-size: cover;
-    // max-height: 850px;
-    min-height: 100vh;
+    max-height: 850px;
     padding: 95px 0px 0px 0px;
-    overflow: hidden;
-    position: relative;
-    &:after {
-        content: '';
-        position: absolute;
-        background: url(../img/feauture__img_2.png) 0 0 / 100% no-repeat;
-        top: 0;
-        left: 0;
-        z-index: 1;
-    }
+    margin: 0px 0px 90px 0px;
+
     &__title {
         margin: 0px 0px 22px 0px;
     }
@@ -295,7 +308,42 @@
     }
 
     &__img {
-        text-align: center;
+        position: relative;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            background: url(../img/feauture__img_2.png) 0 0 / 100% no-repeat;
+            width: 22.83%;
+            padding-top: 39.66%;
+            right: 16.66%;
+            bottom: 5.333%;
+        }
     }
 }
 
+.service-2 {
+    padding: 21px 0px 0px 0px;
+    &__title {
+        margin: 0px 0px 23px 0px;
+    }
+
+    &__subtitle {
+        margin: 0px 0px 42px 0px;
+    }
+
+    &__line {
+        margin: 0px auto 46px;
+    }
+
+    &__text {
+        margin: 0px auto 0px;
+    }
+
+    &__row {}
+
+    &__img {}
+}
