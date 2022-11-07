@@ -340,10 +340,102 @@
     }
 
     &__text {
-        margin: 0px auto 0px;
+        margin: 0px auto 92px;
     }
 
-    &__row {}
+    &__row {
+        display: flex;
+        justify-content: stretch;
+    }
+    &__img {
+        flex: 1 1 50%;
+        margin: 0px 30px 0px 0px;
+    }
 
-    &__img {}
+    &__block {
+        flex: 1 1 50%;
+    }
+
+    &__spoiler {}
+}
+
+.spoiler {
+    border: 1px solid #e5e5e5;
+    margin: 10px 0px 10px 0px;
+    padding: 0px 20px 0px 50px;
+
+    &__title {
+        position: relative;
+        line-height: 1.2;
+        text-transform: uppercase;
+        color: #333333;
+        padding: 25px 0px 25px 0px;
+        cursor: pointer;
+        &:before,
+        &:after {
+            content: '';
+            width: 15px;
+            height: 2px;
+            position: absolute;
+            top: 30px;
+            background-color: #cccccc;
+        }
+        &:before {
+            transform: rotate(45deg);
+            right: 0;
+        }
+        &:after {
+            transform: rotate(-45deg);
+            right: 10px;
+        }
+    }
+
+    &__text {
+        display: none;
+        font-family: Roboto;
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: 300;
+        font-style: italic;
+        color: #999999;
+    }
+}
+
+.spoiler-1 {
+    position: relative;
+    &:before {
+        content: '';
+        background: url(../img/service_2_logo_1.png) no-repeat center;
+        position: absolute;
+        width: 32px;
+        height: 28px;
+        top: 18px;
+        left: 0px;
+    }
+}
+
+.spoiler-2 {
+    position: relative;
+    &:before {
+        content: '';
+        background: url(../img/service_2_logo_2.png) no-repeat center;
+        position: absolute;
+        width: 32px;
+        height: 28px;
+        top: 18px;
+        left: 0px;
+    }
+}
+
+.spoiler-3 {
+    position: relative;
+    &:before {
+        content: '';
+        background: url(../img/service_2_logo_3.png) no-repeat center;
+        position: absolute;
+        width: 32px;
+        height: 28px;
+        top: 18px;
+        left: 0px;
+    }
 }
