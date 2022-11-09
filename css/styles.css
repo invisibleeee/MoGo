@@ -371,7 +371,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .service-2 {
-  padding: 21px 0px 0px 0px;
+  padding: 21px 20px 120px 20px;
 }
 .service-2__title {
   margin: 0px 0px 23px 0px;
@@ -388,6 +388,7 @@ h1, h2, h3, h4, h5, h6 {
 .service-2__row {
   display: flex;
   justify-content: stretch;
+  max-height: 380px;
 }
 .service-2__img {
   flex: 1 1 50%;
@@ -396,17 +397,17 @@ h1, h2, h3, h4, h5, h6 {
 .service-2__block {
   flex: 1 1 50%;
 }
+
 .spoiler {
-  border: 1px solid #e5e5e5;
-  margin: 10px 0px 10px 0px;
-  padding: 0px 20px 0px 50px;
+  margin: 0px 0px 10px 0px;
 }
 .spoiler__title {
   position: relative;
   line-height: 1.2;
   text-transform: uppercase;
   color: #333333;
-  padding: 25px 0px 25px 0px;
+  padding: 25px 20px 25px 20px;
+  border: 1px solid #e5e5e5;
   cursor: pointer;
 }
 .spoiler__title:before, .spoiler__title:after {
@@ -416,14 +417,21 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 30px;
   background-color: #cccccc;
+  transition: all 0.3s ease 0s;
 }
 .spoiler__title:before {
   transform: rotate(45deg);
-  right: 0;
+  right: 10px;
 }
 .spoiler__title:after {
   transform: rotate(-45deg);
-  right: 10px;
+  right: 0px;
+}
+.spoiler__title.active:before {
+  transform: rotate(-45deg);
+}
+.spoiler__title.active:after {
+  transform: rotate(45deg);
 }
 .spoiler__text {
   display: none;
@@ -433,43 +441,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   font-style: italic;
   color: #999999;
-}
-
-.spoiler-1 {
-  position: relative;
-}
-.spoiler-1:before {
-  content: "";
-  background: url(../img/service_2_logo_1.png) no-repeat center;
-  position: absolute;
-  width: 32px;
-  height: 28px;
-  top: 18px;
-  left: 0px;
-}
-
-.spoiler-2 {
-  position: relative;
-}
-.spoiler-2:before {
-  content: "";
-  background: url(../img/service_2_logo_2.png) no-repeat center;
-  position: absolute;
-  width: 32px;
-  height: 28px;
-  top: 18px;
-  left: 0px;
-}
-
-.spoiler-3 {
-  position: relative;
-}
-.spoiler-3:before {
-  content: "";
-  background: url(../img/service_2_logo_3.png) no-repeat center;
-  position: absolute;
-  width: 32px;
-  height: 28px;
-  top: 18px;
-  left: 0px;
+  max-height: 181px;
+  overflow: auto;
+  border: 1px solid #e5e5e5;
+  border-top: 0;
+  padding: 20px;
 }
