@@ -493,8 +493,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .quote {
-  background-color: #f8f8f8;
   padding: 70px 0px;
+  background: #f8f8f8 0 50% no-repeat;
+}
+.quote__block {
+  padding: 0px 75px;
+  margin: 0px 18px;
+  position: relative;
+}
+.quote__block:before {
+  content: "";
+  position: absolute;
+  background: url(../img/arrow_left.png) 0 0 no-repeat;
+  width: 12px;
+  height: 22px;
+  left: 0px;
+  top: 50%;
+}
+.quote__block::after {
+  content: "";
+  position: absolute;
+  background: url(../img/arrow_right.png) 0 0 no-repeat;
+  width: 12px;
+  height: 22px;
+  right: 0px;
+  top: 50%;
 }
 .quote__row {
   display: flex;

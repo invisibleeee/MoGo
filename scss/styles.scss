@@ -471,9 +471,33 @@
 }
 
 .quote {
-    background-color: #f8f8f8;
     padding: 70px 0px;
-    // background: url(../img/arrow_left.png) 0 50% no-repeat;
+    background: #f8f8f8 0 50% no-repeat;
+
+    &__block {
+        padding: 0px 75px;
+        margin: 0px 18px;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            background: url(../img/arrow_left.png) 0 0 no-repeat;
+            width: 12px;
+            height: 22px;
+            left: 0px;
+            top: 50%;
+        }
+    
+        &::after {
+            content: '';
+            position: absolute;
+            background: url(../img/arrow_right.png) 0 0 no-repeat;
+            width: 12px;
+            height: 22px;
+            right: 0px;
+            top: 50%;
+        }
+    }
 
     &__row {
         display: flex;
