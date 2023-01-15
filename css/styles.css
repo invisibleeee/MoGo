@@ -555,3 +555,54 @@ h1, h2, h3, h4, h5, h6 {
   top: 50%;
   background-color: #f38181;
 }
+
+.ourteam {
+  padding: 99px 0px 117px 0px;
+}
+.ourteam__title {
+  margin: 0px 0px 23px 0px;
+}
+.ourteam__subtitle {
+  margin: 0px 0px 42px 0px;
+}
+.ourteam__line {
+  margin: 0px auto 46px;
+}
+.ourteam__text {
+  margin: 0px auto 82px;
+}
+.ourteam__row {
+  display: flex;
+}
+.card {
+  margin: 0px 30px 0px 0px;
+}
+.card:last-child {
+  margin: 0;
+}
+.card__image {
+  margin: 0px 0px 31px 0px;
+}
+.card__title {
+  text-align: center;
+  font-family: Montserrat;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+  margin: 0px 0px 15px 0px;
+}
+.card__subtitle {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 300;
+  font-style: italic;
+  color: #999999;
+}
+.card__links a {
+  background-color: #fce38a;
+  width: 56px;
+  height: 56px;
+}
