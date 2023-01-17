@@ -582,7 +582,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 .card__image {
   margin: 0px 0px 31px 0px;
+}
+.card__image-1 {
+  width: 380px;
+  height: 470px;
+  background-color: #95e1d3;
   position: relative;
+}
+.card__image-1 img {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
 }
 .card__image-links {
   display: flex;
@@ -597,6 +607,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 56px;
   text-align: center;
   line-height: 65px;
+  margin-right: 1px;
 }
 .card__image-links a:first-child {
   background-color: #f38181;
@@ -624,4 +635,31 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   font-style: italic;
   color: #999999;
+}
+
+.logos {
+  background-color: #f8f8f8;
+  padding: 51px 0px 50px 0px;
+}
+.work {
+  padding: 110px 0px 0px 0px;
+}
+.work__images {
+  display: flex;
+}
+.work__images-left {
+  flex: 1 1 960px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.work__images-center {
+  flex: 1 1 480px;
+}
+.work__images-right {
+  flex: 1 1 480px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.work__images-right img {
+  object-fit: cover;
 }
