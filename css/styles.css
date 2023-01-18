@@ -641,25 +641,106 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #f8f8f8;
   padding: 51px 0px 50px 0px;
 }
+
 .work {
   padding: 110px 0px 0px 0px;
+}
+.work__title {
+  margin: 0px 0px 23px 0px;
+}
+.work__subtitle {
+  margin: 0px 0px 40px 0px;
+}
+.work__line {
+  margin: 0px auto 47px;
+}
+.work__text {
+  margin: 0px auto 91px;
 }
 .work__images {
   display: flex;
 }
 .work__images-left {
-  flex: 1 1 960px;
+  flex: 1 1 50%;
   display: flex;
   flex-flow: row wrap;
+}
+.work__images-left img {
+  object-fit: cover;
+  width: 50%;
 }
 .work__images-center {
-  flex: 1 1 480px;
+  flex: 1 1 25%;
+}
+.work__images-center img {
+  object-fit: cover;
+  width: 100%;
 }
 .work__images-right {
-  flex: 1 1 480px;
+  flex: 1 1 25%;
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
 }
 .work__images-right img {
   object-fit: cover;
+  width: 100%;
+}
+
+.testimonial {
+  padding: 100px 0px 159px 0px;
+}
+.testimonial__row {
+  display: flex;
+  position: relative;
+  padding: 0px 45px;
+}
+.testimonial__row:before {
+  content: "";
+  position: absolute;
+  background: url(../img/arrow_left.png) 0 0 no-repeat;
+  width: 12px;
+  height: 22px;
+  left: 0px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.testimonial__row:after {
+  content: "";
+  position: absolute;
+  background: url(../img/arrow_right.png) 0 0 no-repeat;
+  width: 12px;
+  height: 22px;
+  right: 0px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.testimonial__image {
+  margin: 0px 31px 0px 0px;
+}
+.testimonial__text {
+  font-family: Roboto;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 300;
+  font-style: italic;
+  color: #999999;
+  margin: 0px 0px 20px 0px;
+}
+.testimonial__author {
+  position: relative;
+  font-family: "Kaushan Script";
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #333333;
+  padding: 0px 0px 0px 70px;
+}
+.testimonial__author:before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  top: 50%;
+  left: 0px;
+  background-color: #f38181;
 }
