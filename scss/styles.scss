@@ -701,6 +701,7 @@
     padding: 100px 0px 159px 0px;
     &__row {
         display: flex;
+        align-items: center;
         position: relative;
         padding: 0px 45px;
         &:before {
@@ -729,7 +730,9 @@
         margin: 0px 31px 0px 0px;
     }
 
-    &__body {}
+    &__body {
+        width: 770px;
+    }
 
     &__text {
         font-family: Roboto;
@@ -760,5 +763,85 @@
         }
     }
 }
+
+.what-people-say {
+    background: url(/img/what_people_say_background.png) center/cover no-repeat;
+    padding: 109px 0px 129px 0px;
+    
+    &__container {
+        max-width: 1110px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        margin: 0px 0px 16px 0px;
+    }
+
+    &__subtitle {
+        margin: 0px 0px 42px 0px;
+    }
+
+    &__line {
+        margin: 0px auto 87px;
+    }
+
+    &__row {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    &__card {
+        display: flex;
+        flex: 1 1 42.9%;
+        margin: 0px 86px 69px 0px;
+        &:nth-child(even) {
+            flex: 1 1 42%;
+            margin: 0px 0px 69px 0px;
+        }
+        &:nth-last-child(-n+2) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__card-image {
+        margin: 0px 30px 0px 0px;
+    }
+
+    &__card-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__card-title {
+        font-family: Montserrat;
+        line-height: 1.2;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #333333;
+        margin: 0px 0px 15px 0px;
+    }
+
+    &__card-subtitle {
+        font-family: Roboto;
+        font-size: 15px;
+        line-height: 24px;
+        font-style: italic;
+        color: #333333;
+        margin: 0px 0px 17px 0px;
+    }
+
+    &__card-line {
+        margin: 0px 0px 24px 0px;
+    }
+
+    &__card-text {
+        font-family: Roboto;
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #999999;
+    }
+}
+
 
 
